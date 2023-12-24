@@ -531,7 +531,7 @@ outline: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .subscribe-form-btn{
-  display: flex;
+  display: inline-flex;
   color:#FFF;
   border-radius: 4px;
   background: #4D5AE5;
@@ -597,6 +597,20 @@ outline: transparent;
   min-width: 24px;
   height: 24px;
   color: #2E2F42;
+  border-radius: 50%;;
+  fill:  #2E2F42;
+  background-color: #E7E9FC ;
+  border-color: #8E8F99;
+  stroke-width: 1px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.modal-btn:hover,
+.modal-btn:focus{
+  fill:  #FFFFFF;
+  background-color: #404BBF ;
+  border-color: #404BBF;
+
 }
 .modal-btn-icon {
   stroke: currentColor;
@@ -610,11 +624,11 @@ letter-spacing: 0.02em;
 padding-bottom: 16px;
 }
 .modal-form-wrapper{
-  margin-bottom: 18px;
+  margin-bottom: 8px;  
 }
 .form-label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: #8E8F99;
   font-size: 12px;
   line-height: 1.16;
@@ -630,7 +644,7 @@ padding-bottom: 16px;
   padding-left: 38px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.40);
-
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   outline: transparent;
 }
 .form-input:focus{
@@ -669,11 +683,12 @@ transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .form-input:focus + .form-icon {
   fill: #4D5AE5;
+
 }
 .form-agreement {
   display: block;
   margin-bottom: 24px;
-
+ user-select: none;
   color:#8E8F99;
   line-height: 1.16;
   letter-spacing: 0.04em;
@@ -685,14 +700,25 @@ transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  cursor: pointer;
   width: 16px;
   height: 16px;
   stroke-width: 1px;
-  stroke: rgba(46, 47, 66, 0.40);
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.checkbox:checked + .form-agreement-checkbox {
+background-color:#4D5AE5;
+border-color: #4D5AE5;
 }
 .form-agreement-icon {
+  fill:#F4F4FD;
   opacity: 0;
+
+}
+.checkbox:checked + .form-agreement-checkbox> .form-agreement-icon{
+opacity: 1;
 }
 .form-agreement-link {
   color: #4D5AE5;
