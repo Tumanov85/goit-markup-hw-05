@@ -534,6 +534,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 4px;
   border: 1px solid #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
 }
 .subscribe-form-btn{
   min-width: 165px;
@@ -651,7 +652,7 @@ padding-bottom: 16px;
 margin-bottom: 16px;
 }
 .modal-form-wrapper{
-  margin-bottom: 16px;  
+  margin-bottom: 8px;  
   
 }
 .form-label {

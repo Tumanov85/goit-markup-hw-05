@@ -467,10 +467,7 @@
 
         <form class="modal-form form" name="modal">
           <div class="modal-form-wrapper">
-            <label 
-            class="form-label" 
-            for="user-name"
-            name="user-name">Name</label>
+            <label class="form-label" for="user-name">Name</label>
             <div class="form-field">
               <input
                 class="form-input"
@@ -518,23 +515,23 @@
               placeholder="Text input"></textarea>
           </div>
 
-          <label class="form-agreement" for="user-privacy">
-            <div class="checkbox-agreement">
-            <input
-              class="checkbox visually-hidden"
-              type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
-              value="true" />
-            <span class="form-agreement-checkbox">
-              <svg class="form-agreement-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="form-agreement-link" href="">Privacy Policy</a>
-          </label>
-</div>
+          <div class="checkbox-agreement">
+            <label class="form-agreement" for="user-privacy">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                name="user-privacy"
+                value="true" />
+              <span class="form-agreement-checkbox">
+                <svg class="form-agreement-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="form-agreement-link" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button class="hero-button" type="submit">Send</button>
         </form>
       </div>
