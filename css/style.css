@@ -636,6 +636,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   background-color: #404BBF ;
   border-color: #404BBF;
   border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
 .modal-btn-icon {
@@ -747,9 +748,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + .form-agreement-checkbox {
 border-color: #4D5AE5;
-border: none;
-background-color: #404bbf;
-fill: #F4F4FD;
+
 }
 .form-agreement-icon {
   fill:#F4F4FD;
@@ -758,6 +757,9 @@ fill: #F4F4FD;
 }
 .checkbox:checked + .form-agreement-checkbox> .form-agreement-icon{
 opacity: 1;
+border: none;
+background-color: #404bbf;
+fill: #F4F4FD;
 }
 .form-agreement-link {
   color: #4D5AE5;
